@@ -431,3 +431,43 @@ color: whitesmoke;
     top:85%
   }
 }
+@media (max-width:357px) {
+  .tek{
+    font-size: 0.8rem;
+  }
+  .text-container{
+    top:90%
+  }
+}
+@media (min-width:425px) {
+  .tek{
+    font-size: 1rem;
+  }
+  .text-container{
+    top:90%
+  }
+}
+@media (min-width:693px) {
+  .tek{
+    font-size: 1.4rem;
+  }
+  .text-container{
+    top:90%
+  }
+}
+@media (min-width:360px) {
+  .tek{
+    font-size: 0.8rem;
+  }
+  .text-container{
+    top:90%
+  }
+}
+@media (min-width:712px) {
+  .tek{
+    font-size: 1.6rem;
+  }
+  .text-container{
+    top:85%
+  }
+}
