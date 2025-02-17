@@ -255,6 +255,44 @@ max-width: 300px;
   
   
 }
+.sara2{
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+.sara{
+height: auto;
+display:flex;
+align-items: center;
+width: 100%;
+
+}
+.btn8{
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif ;
+  cursor: pointer;
+  border-color: #000957;
+  
+}
+.btn8:hover{
+  background-color:#000957 ;
+  color: aliceblue;
+  
+}
+.ifr{
+  width: 100%;
+  height:50vh;
+  margin-top: 10px;
+  border-radius: 30px;
+  border-color: rgb(110, 9, 9);
+  border-width: 5px;
+
+}
 .download-btn:hover{
   background-color: #2196F3;
 }
@@ -380,130 +418,70 @@ color: whitesmoke;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-@media (max-width: 425px) {
-  .tek{
-    font-size: 1.1rem;
-    height: fit-content;
+/* تعديلات الوسائط العامة */
+@media (max-width: 768px) {
+  .tek {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 8px !important;
   }
-  
-}
-@media (max-width:479px ) {
-  .tek{
-    font-size: 1.1rem;
-    height: fit-content;
-  }
-}
-@media (max-width:360px) {
-  .tek{
-    font-size: 0.9rem;
-    height: fit-content;
-  }
-}
-@media (max-width:337px) {
-  .tek{
-    font-size: 0.8rem;
-    height: fit-content;
-  }
-}
-@media (max-width :915px) {
-  .tek{
-    font-size: 0.9rem;
-  }
-  .text-container{
-    top: 90%;
-  }
-}
-@media (max-width:850px) {
-  .tek{
-    font-size: 1.4rem;
-  }
-  .text-container{
-    top:85%
-  }
-}
-@media (max-width:451px) {
-  .tek{
-    font-size: 1rem;
-  }
-  .text-container{
-    top:90%
-  }
-}
-@media (max-width:911px) {
-  .tek{
-    font-size: 1.4rem;
-  }
-  .text-container{
-    top:85%
-  }
-}
-@media (max-width:357px) {
-  .tek{
-    font-size: 0.8rem;
-  }
-  .text-container{
-    top:90%
-  }
-}
-@media (min-width:425px) {
-  .tek{
-    font-size: 1rem;
-  }
-  .text-container{
-    top:90%
-  }
-}
-@media (min-width:693px) {
-  .tek{
-    font-size: 1.4rem;
-  }
-  .text-container{
-    top:90%
-  }
-}
-@media (min-width:360px) {
-  .tek{
-    font-size: 0.8rem;
-  }
-  .text-container{
-    top:90%
-  }
-}
-@media (min-width:712px) {
-  .tek{
-    font-size: 1.6rem;
-  }
-  .text-container{
-    top:85%
-  }
-}
-@media (max-width:628px) {
-  .tek{
-    font-size: 1.5rem;
-  }
-  .text-container{
-    top:85%
+  .text-container {
+    top: 85%;
+    width: 90%;
   }
 }
 
-@media (max-width:674px) {
-  .tek{
-    font-size: 1.2rem;
+/* للأجهزة الصغيرة (أيفون SE وأشباهه) */
+@media (max-width: 375px) {
+  .tek {
+    font-size: 0.9rem;
+    height: auto;
+    padding: 5px !important;
   }
-  .text-container{
-    top:88%
-  }
-}
-@media (min-width:705px) {
-  .tek{
-    font-size: 1.5rem;
-  }
-  .text-container{
-    top:85%
+  .text-container {
+    top: 82%;
   }
 }
-@media (width:689px) {
-  .tek{
-    font-size: 1.4rem;
+
+/* للأجهزة متوسطة الحجم (أيفون 12/13 برو) */
+@media (min-width: 376px) and (max-width: 428px) {
+  .tek {
+    font-size: 1rem;
+    height: auto;
+  }
+  .text-container {
+    top: 83%;
+  }
+}
+
+/* لشاشات سامسونج الكبيرة (Galaxy S20 Ultra) */
+@media (min-width: 429px) and (max-width: 500px) {
+  .tek {
+    font-size: 1.1rem;
+    height: auto;
+  }
+  .text-container {
+    top: 84%;
+  }
+}
+
+/* للأجهزة الأفقية (عرض أكبر من 500px) */
+@media (min-width: 501px) and (max-width: 915px) {
+  .tek {
+    font-size: 1.3rem;
+    height: auto;
+  }
+  .text-container {
+    top: 88%;
+  }
+}
+
+/* تعديلات خاصة للارتفاعات الصغيرة */
+@media (max-height: 670px) {
+  .text-container {
+    top: 80% !important;
+  }
+  .tek {
+    font-size: 0.9rem !important;
   }
 }
