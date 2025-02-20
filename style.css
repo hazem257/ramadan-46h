@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Reem+Kufi+Fun:wght@400..700&display=swap');
@@ -170,9 +169,22 @@ body {
   max-width: 600px;
 }
 
-#card-preview {
+.alert-error {
+  background: #ffebee;
+  color: #b71c1c;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#preview-card {
   position: relative;
-  border-radius: 15px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .card-wrapper {
@@ -244,16 +256,13 @@ flex-direction: row;
   font: bold;
   font-family: sans-serif;
   font-weight: 700;
-padding: 1rem 2rem;
-margin: 1rem auto !important;
-font-size: 1.2rem;
-transition: all 0.3s ease;
-display: block;
-width: 100%;
-max-width: 300px;
-
-  
-  
+  padding: 1rem 2rem;
+  margin: 1rem auto !important;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  max-width: 300px;
 }
 .sara2{
   display: none;
@@ -261,10 +270,10 @@ max-width: 300px;
   height: 100vh;
 }
 .sara{
-height: auto;
-display:flex;
-align-items: center;
-width: 100%;
+  height: auto;
+  display:flex;
+  align-items: center;
+  width: 100%;
 
 }
 .btn8{
@@ -446,11 +455,11 @@ color: whitesmoke;
 /* للأجهزة متوسطة الحجم (أيفون 12/13 برو) */
 @media (min-width: 376px) and (max-width: 428px) {
   .tek {
-    font-size: 1rem;
+    font-size: 1.1rem;
     height: auto;
   }
   .text-container {
-    top: 83%;
+    top: 90%;
   }
 }
 
@@ -475,7 +484,24 @@ color: whitesmoke;
     top: 88%;
   }
 }
-
+@media (width:768px) {
+  .tek {
+    font-size: 1.8rem;
+    height: auto;
+  }
+  .text-container {
+    top: 88%;
+  }
+}
+@media (max-width:670px) {
+  .tek {
+    font-size: 1.7rem;
+    height: auto;
+  }
+  .text-container {
+    top: 88%;
+  }
+}
 /* تعديلات خاصة للارتفاعات الصغيرة */
 @media (max-height: 670px) {
   .text-container {
