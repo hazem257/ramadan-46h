@@ -52,18 +52,16 @@ function downloadCard() {
   cloneContainer.style.position = 'fixed';
   cloneContainer.style.top = '-9999px';
   
-  // إنشاء نسخة عالية الجودة
   const clonedCard = document.querySelector('.card-wrapper').cloneNode(true);
-  clonedCard.style.width = '600px'; // حجم ثابت للجودة
-  clonedCard.style.border = '15px solid #d4af37';
+  clonedCard.style.width = '600px'; 
+  //clonedCard.style.border = '15px solid #d4af37';
   clonedCard.style.borderRadius = '30px';
-  clonedCard.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+  //clonedCard.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
   
-  // إضافة تأثيرات النص
   const textElement = clonedCard.querySelector('.tek');
-  textElement.style.textShadow = '2px 2px 4px rgba(0,0,0,0.5)';
+//  textElement.style.textShadow = '2px 2px 4px rgba(0,0,0,0.5)';
   textElement.style.padding = '15px';
-  textElement.style.background = 'rgba(0,0,0,0.3)';
+  //textElement.style.background = 'rgba(0,0,0,0.3)';
   textElement.style.borderRadius = '15px';
   
   cloneContainer.appendChild(clonedCard);
@@ -71,7 +69,7 @@ function downloadCard() {
 
   html2canvas(clonedCard, {
     useCORS: true,
-    scale: 3, // زيادة الدقة
+    scale: 3, 
     logging: true,
     backgroundColor: null,
     allowTaint: true,
@@ -84,7 +82,7 @@ function downloadCard() {
     link.href = canvas.toDataURL('image/png', 1.0);
     link.click();
     
-    // التنظيف
+    
     document.body.removeChild(cloneContainer);
   });
 }
