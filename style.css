@@ -126,6 +126,7 @@ body {
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
+
 }
 
 .image-option:hover {
@@ -219,6 +220,8 @@ body {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  border-radius: 12px;
+
   
 }
 
@@ -234,6 +237,9 @@ body {
 .card-image {
   width: 100%;
   height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+
 }
 
 .card-text {
