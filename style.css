@@ -14,6 +14,9 @@ body {
   min-height:100vh;
   scroll-behavior: smooth;
   background-attachment: fixed;
+  background-repeat: repeat-x;
+  width: 100%;
+  background-color: #033a34;
 }
 .h3{
   color: #fffefe;
@@ -165,6 +168,29 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.submit-btn-1 {
+  background: #f1c40f;
+  color: #0a3d1d;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto !important;
+  font-family: sans-serif;
+  font: bold;
+}
+
+.submit-btn-1:hover {
+  background: #f39c12;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 #export-content {
   position: relative;
   margin: 0 auto;
@@ -193,6 +219,7 @@ body {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  
 }
 
 .text-container {
@@ -207,7 +234,6 @@ body {
 .card-image {
   width: 100%;
   height: auto;
-  border-radius: 15px;
 }
 
 .card-text {
@@ -225,7 +251,7 @@ body {
   border-radius: 25px;
 }
 .tek{
-  font-size: 1.7rem;
+  font-size: clamp(1rem, 4vw + 0.5rem, 2rem); /* حجم خط ديناميكي */
   font: bolder;
   text-align: center;
   padding: 5px !important; /**/
@@ -429,96 +455,61 @@ color: whitesmoke;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-/* تعديلات الوسائط العامة */
-@media (max-width: 768px) {
-  .tek {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    padding: 8px !important;
-  }
-  .text-container {
-    top: 85%;
-    width: 90%;
-  }
-}
-
-/* للأجهزة الصغيرة (أيفون SE وأشباهه) */
-@media (max-width: 375px) {
-  .tek {
-    font-size: 0.9rem;
-    height: auto;
-    padding: 5px !important;
-  }
-  .text-container {
-    top: 82%;
-  }
-}
-
-/* للأجهزة متوسطة الحجم (أيفون 12/13 برو) */
-@media (min-width: 376px) and (max-width: 428px) {
-  .tek {
-    font-size: 1.1rem;
-    height: auto;
-  }
-  .text-container {
-    top: 90%;
-  }
-}
-
-/* لشاشات سامسونج الكبيرة (Galaxy S20 Ultra) */
-@media (min-width: 429px) and (max-width: 500px)  {
-  .tek {
-    font-size: 1.1rem;
-    height: auto;
-  }
-  .text-container {
-    top: 84%;
-  }
-}
-
-/* للأجهزة الأفقية (عرض أكبر من 500px) */
-@media (min-width: 501px) and (max-width: 915px) {
-  .tek {
-    font-size: 1.3rem;
-    height: auto;
-  }
-  .text-container {
-    top: 88%;
-  }
-}
-@media (width:768px) {
-  .tek {
-    font-size: 1.8rem;
-    height: auto;
-  }
-  .text-container {
-    top: 88%;
-  }
-}
-@media (max-width:670px) {
-  .tek {
-    font-size: 1.7rem;
-    height: auto;
-  }
-  .text-container {
-    top: 88%;
-  }
-}
-/* تعديلات خاصة للارتفاعات الصغيرة */
-@media (max-height: 670px) {
-  .text-container {
-    top: 80% !important;
-  }
-  .tek {
-    font-size: 0.9rem !important;
-  }
-}
-@media (max-width: 360px)  {
-  .tek {
+/* Small devices (landscape phones, 320px and up) */
+@media (width: 320px) { 
+  .tek{
     font-size: 0.8rem;
-    height: auto;
   }
-  .text-container {
-    top: 88%;
+  .card-image{
+    width: 100%;
   }
-}
+  .controls{
+    display: flex;
+    flex-direction: column;
+  }
+  .download-btn{
+    padding: 5px;
+  }
+  .submit-btn-1{
+    padding: 5px;
+  }
+  .text-container{
+    top: 95%;
+    width: 100%;
+  }
+ }
+ @media (min-width: 360px) { 
+  .tek{
+    font-size: 1rem;
+  }
+  .card-image{
+    width: 100%;
+  }
+  .controls{
+    display: flex;
+    flex-direction: column;
+  }
+  .download-btn{
+    padding: 5px;
+  }
+  .submit-btn-1{
+    padding: 5px;
+  }
+  .text-container{
+    top: 90%;
+    width: 100%;
+  }
+ }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .tek{
+    font-size: 1.5rem;
+  }
+ }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
